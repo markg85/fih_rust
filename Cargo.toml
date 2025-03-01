@@ -1,0 +1,17 @@
+[package]
+name = "fih_rust"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+debug = false
+
+[dependencies]
+fast_image_resize = { version = "5.1.0", features = ["image", "rayon"] }
+image = { version = "0.25.5", features = ["avif-native"] }
+tempfile = "3.3.0"
+rocket = { version = "0.5.1", features = ["json"] }
+blake3 = "1.6.1"
+serde = "1.0.218"
+reqwest = "0.12.12"
+serde_json = "1.0.139"

@@ -1,0 +1,18 @@
+version: "3"
+services:
+  fih:
+    build: .
+    container_name: fih
+    restart: unless-stopped
+    volumes:
+      - /home/docker-data/fih/images:/src/images
+  nginx:
+    image: nginx:alpine
+    container_name: fih_images
+    volumes:
+      - /home/docker-data/fih/images:/usr/share/nginx/html:ro
+    restart: unless-stopped
+networks:
+  default:
+    external:
+      name: sc2
