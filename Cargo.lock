@@ -374,15 +374,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "cmake"
-version = "0.1.54"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e7caa3f9de89ddbe2c607f4101924c5abec803763ae9534e4f4d7d8f84aa81f0"
-dependencies = [
- "cc",
-]
-
-[[package]]
 name = "color_quant"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1554,7 +1545,6 @@ version = "3.1.0+1.18.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e663db80d4272b60c066c5a9d17370ffa0433a31d424152f95f1e1effb9b3860"
 dependencies = [
- "cmake",
  "libc",
  "pkg-config",
  "vcpkg",
